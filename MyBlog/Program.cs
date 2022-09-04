@@ -16,6 +16,7 @@ namespace MyBlog
             CreateHostBuilder(args).Build().Run();
         }
         // Second version
+        // Third Version
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
