@@ -37,6 +37,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "SqlSugar": {
+              "target": "Package",
+              "version": "[5.1.2.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

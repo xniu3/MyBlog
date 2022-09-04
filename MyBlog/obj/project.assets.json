@@ -1,11 +1,36 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "SqlSugar/5.1.2.6": {
+        "type": "package",
+        "compile": {
+          "lib/SqlSugar.dll": {}
+        },
+        "runtime": {
+          "lib/SqlSugar.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "SqlSugar/5.1.2.6": {
+      "sha512": "1XiUEPuNjRXghytFCkeZeG/0pv/33RzWP1NbiCR4VwFc7fqRtlDsNrI7oA5M7RwgO+z8nYuB5AVx+vV/6/E1kw==",
+      "type": "package",
+      "path": "sqlsugar/5.1.2.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/SqlSugar.dll",
+        "sqlsugar.5.1.2.6.nupkg.sha512",
+        "sqlsugar.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "SqlSugar >= 5.1.2.6"
+    ]
   },
   "packageFolders": {
     "/Users/xinhaoniu/.nuget/packages/": {}
@@ -43,6 +68,12 @@
     "frameworks": {
       "net5.0": {
         "targetAlias": "net5.0",
+        "dependencies": {
+          "SqlSugar": {
+            "target": "Package",
+            "version": "[5.1.2.6, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -65,5 +96,17 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'SqlSugar 5.1.2.6' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "SqlSugar",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

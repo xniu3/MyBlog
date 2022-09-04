@@ -1,8 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "7E+w7+1kiKj+XZTn58+OZHIP4FhntlkAlmHyYAQ1uwzCoT0+u2Ski9X4A1RWZZVEsFy2ccr0At5k83o74V8Ghw==",
+  "dgSpecHash": "2ofh1W9u+xNol0m9tPPPfYrj1FnIbg7cIQqKHoOaQWjAh7obDeaZHErfrXDErEviKK8arzAEwVclisbjNC0VeQ==",
   "success": true,
   "projectFilePath": "/Users/xinhaoniu/Projects/MyBlog/MyBlog/MyBlog.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "/Users/xinhaoniu/.nuget/packages/sqlsugar/5.1.2.6/sqlsugar.5.1.2.6.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'SqlSugar 5.1.2.6' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "SqlSugar",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

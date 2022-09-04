@@ -4,4 +4,16 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="MyBlog.Model\" />
+    <None Remove="SqlSugar" />
+    <None Remove="MyBlog.IRepository\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MyBlog.Model\" />
+    <Folder Include="MyBlog.IRepository\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="SqlSugar" Version="5.1.2.6" />
+  </ItemGroup>
 </Project>
